@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: black; /* Ensures text is black on all pages */
+}
+
+.section {
+    padding: 100px 50px;
+    text-align: center;
+    min-height: 100vh; /* Each section fills the screen vertically */
+    color: white; /* Default text color for all sections */
+}
+
+.home {
+    background-image: url('studio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Assigning different background colors for each section */
+#news {
+    background-color: #ffd54f; /* Warm shade of yellow from the theater image */
+}
+
+#news .content-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter for better readability */
+    color: #212121; /* Dark grey text for readability */
+}
+
+#news img.news-image {
+    max-width: 100%; /* Ensures image is responsive and fits the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below image */
+}
+#contact .content-box {
+    background-color: #fb8c00; /* Deeper orange shade from the image */
+    color: white;
+}
+
+#about {
+    background-image: url('WhatsApp Image 2024-04-25 at 03.02.29_60ece853.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about .content-box {
+    background-color: rgba(0, 0, 0, 0.6); /* For better readability */
+    color: white; /* White text for contrast */
+    padding: 30px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    max-width: 800px;
+    margin: auto;
+    position: relative; /* For positioning the text correctly */
+}
+
+#about h2, #about h3 {
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.6; /* Improved readability for paragraphs */
+}nav ul {
+    list-style: none;
+    padding: 0;
+}
+#feeds {
+    background-color: #f0f0f0; /* Light background for the feed section */
+    padding: 50px;
+}
+
+#feeds .content-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px;
+}
+
+.feed-posts {
+    margin-bottom: 30px;
+}
+
+.post-creation {
+    margin-top: 30px;
+}
+
+.post-creation input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.post-creation input[type="file"] {
+    width: calc(30% - 20px);
+    padding: 10px;
+}
+
+.post-creation button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background for the post button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.post-creation button:hover {
+    background-color: #45a049;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home nav a {
+    color: white; /* White text for nav links on home */
+}
+
+.home nav a:hover {
+    text-decoration: underline;
+}
+
+/* Styling nav links for other pages to be black and have a hover effect */
+#news nav a,
+#contact nav a,
+#about nav a {
+    color: black;
+}
+
+#news nav a:hover,
+#contact nav a:hover,
+#about nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
